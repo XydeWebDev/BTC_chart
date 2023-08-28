@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>График цены BTC</title>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="btc-item">
+			<figure>
+				<img src="img/btc.png" alt="BTC logo">
+				<figcaption>Bitcoin <span class="symbol">BTC</span></figcaption>
+			</figure>
+
+			<div id="btc-price" class="price"></div>
+
+			<div>
+				<div id="btc-percent" class="percent"></div>
+				<span class="change">(24 h)</span>
+			</div>
+		</div>
+		
+		<div class="chart">
+			<canvas id="coin-chart"></canvas>
+		</div>
+
+		<div class="buttons">
+			<button class="button" id="1d"><b>1 d</b></button>
+			<button class="button" id="7d"><b>7 d</b></button>
+			<button class="button" id="1m"><b>1 m</b></button>
+			<button class="button" id="1y"><b>1 y</b></button>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

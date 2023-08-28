@@ -1,0 +1,167 @@
+body {
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: monospace, sans-serif;
+	font-size: 28px;
+	text-align: center;
+	color: #ffffff;
+	background: linear-gradient(180deg, #010030, #010115);
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.btc-item {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto;
+}
+
+img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 20px auto;
+}
+
+figure {
+	margin: 10px auto;
+}
+
+svg {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.symbol, .change {
+    color: #808080;
+}
+
+.percent, .change {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.positive {
+    color: #00FF00;
+}
+
+.negative {
+    color: #FF0000;
+}
+
+@keyframes fadeColorIncrease {
+  	0% {
+    	color: #00FF00;
+  	}
+  	100% {
+    	color: #FFFAFA;
+  	}
+}
+
+@keyframes fadeColorDecrease {
+  	0% {
+    	color: #FF0000;
+  	}
+  	100% {
+    	color: #FFFAFA;
+  	}
+}
+
+.increase {
+  	animation: fadeColorIncrease 2s linear;
+}
+
+.decrease {
+  	animation: fadeColorDecrease 2s linear;
+}
+
+.chart {
+	display: block;
+	width: 800px;
+	height: 400px;
+	margin: 10px auto;
+}
+
+.buttons {
+	margin: 10px auto;
+}
+
+button {
+	display: inline-block;
+	color: #808080;
+	background: #010115;
+	border: 2px solid #808080;
+	border-radius: 10px;
+	padding: 7px 20px;
+	margin: 0 10px;
+}
+
+button:hover {
+	color: #010115;
+	background: #808080;
+	cursor: pointer;
+}
+
+button:focus {
+	color: #010115;
+	background: #808080;
+}
+
+@media (max-width: 1050px) {
+	.container {
+		width: 90%;
+	}
+
+    .chart {
+		width: 700px;
+		height: 350px;
+	}
+}
+
+@media (max-width: 800px) {
+    .chart {
+		width: 600px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 700px) {
+    .chart {
+		width: 500px;
+		height: 250px;
+	}
+}
+
+@media (max-width: 600px) {
+    .chart {
+		width: 400px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 500px) {
+    .container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.chart {
+		width: 350px;
+		height: 175px;
+	}
+
+	.buttons {
+		width: 200px;
+	}
+
+	button {
+		margin: 0;
+	}
+}
